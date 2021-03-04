@@ -64,7 +64,6 @@ function MoviePage() {
   };
 
   return (
-    <main className="container">
       <div className="row">
         <div className="col-3">
           <Genres
@@ -90,7 +89,6 @@ function MoviePage() {
           />
         </div>
       </div>
-    </main>
   );
 }
 

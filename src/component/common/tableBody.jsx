@@ -1,5 +1,5 @@
 import _ from "lodash";
-import { Link } from "react-router-dom";
+
 
 function TableBody({ data, columns }) {
   const renderCell = (item, col) => {
@@ -16,17 +16,8 @@ function TableBody({ data, columns }) {
         return (
           <tr key={item._id}>
             {columns.map((col) => {
-              if (col.label === "Title") {
-                return (
-                  <td key={keys(item, col)}>
-                    <Link to={`/movies/${item._id}`}>
-                      {renderCell(item, col)}
-                    </Link>
-                  </td>
-                );
-              } else {
                 return <td key={keys(item, col)}>{renderCell(item, col)}</td>;
-              }
+              
             })}
           </tr>
         );

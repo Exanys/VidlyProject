@@ -4,7 +4,7 @@ import { NavLink, Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link className="navbar-brand" to="/movies">
+      <Link className="navbar-brand" to="/">
         Vidly
       </Link>
       <button

@@ -1,11 +1,11 @@
 import MoviesTable from "./moviesTable";
 
 function Movies({ length, movies, changeLike, deleteMovie, onSort, sortCol }) {
-  if (length === 0) return <p>There is no movies in database.</p>;
+  if (length === 0) return <p>There is no movie in database.</p>;
 
   return (
     <div>
-      <p>There is {length} movies in database.</p>
+      <p>Showing {length} movies in database.</p>
       <MoviesTable
         movies={movies}
         changeLike={changeLike}
